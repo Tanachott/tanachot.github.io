@@ -57,6 +57,12 @@
 
         while (true) {
             let n = prompt('Enter an integer (a negative integer to quit):');
+
+            if (n === null) {
+                alert('cancelled.');
+                break;
+            }
+
             n = parseInt(n);
 
             if (isNegative(n)) {
